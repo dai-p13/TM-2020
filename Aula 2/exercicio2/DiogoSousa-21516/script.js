@@ -6,5 +6,9 @@ function adicionarNumero(){
 }
 
 function calcular(){
-    alert(Math.max.apply(Math, arrayNumbers))
+    if(arrayNumbers.length > 5){
+        var maiorNumero = Math.max.apply(Math, arrayNumbers);
+        alert(maiorNumero);
+    }
+
 }
